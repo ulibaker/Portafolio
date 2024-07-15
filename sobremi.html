@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		
+		<script src="jquery-1.6.3.min.js"></script>
+		<script>
+			$(function() {
+				$("body").hide().fadeIn(750);
+			});
+		</script>
+		
+		<title>About me | Jr Developer</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="listanavegar"><a href="sobremi.html">About me</a></li>
+					<li class="listanavegar"><a href="formacion.html">Formation</a></li>
+					<li class="listanavegar"><a href="habilidades.html">My Skills</a></li>
+					<li class="listanavegar"><a href="experiencia.html">Experience</a></li>
+					<li class="listanavegar"><a href="proyectos.html">My Proyects</a></li>
+				</ul>
+			</nav>	
+			<div class="cyantitle">
+				<h2>ABOUT ME</h2>
+				<p> Personal information about me and my interests. </p>
+			</div>
+		</header>
+		
+		<section>
+			<button type="button" class="colapsable"><h3> Basic information. </h3></button>
+			<div class="parrafo">		
+				<p> I was born in the city of Chihuahua, Mexico, the July 24th of 2000. I am 24 years old, I have good health and I don't have children</p>
+			</div>
+			<button type="button" class="colapsable"><h3> Hobbies. </h3></button>
+			<div class="parrafo">
+				<p> I am a very fit person. I started to practice martial arts a couple of years ago. </p>
+				<p> In my free time I like to learn and practice new languages, play games and watch anime. </p>
+				<p> I also love pets, specially cats! </p>
+				<figure>
+					<img src="media/gata.jpg" alt="My Pet" title="My calico cat Aria - 2019." />
+				</figure>
+			</div>
+			<button type="button" class="colapsable"><h3> Main goal. </h3></button>
+			<div class="parrafo">
+				<p> Of course I would like to get a job in any country of the European Union, but I am focused in my first option: Tallinn,
+				I was plannig to move to Estonia since I discovered this country, actually I am struggling with
+				the basics of the estonian language, but it is always fun and interesting to discover a new culture!<br>
+				Why? Because its high cuality of living and a high demand of IT workers. </p>
+			</div>
+			<button type="button" class="colapsable"><h3> Vocation as a programmer. </h3></button>
+			<div class="parrafo">
+				<p> Since I was a child I was particularly good at logic and math, I actually competed in several contest at elementary and high school. 
+				That was the reason why I decided to go to the university. </p>
+				
+				<figure>
+					<img src="media/cara.jpg" alt="My Face" title="Place: Fuente de los Coyotes - 2022." />
+				</figure>
+			</div>
+			<a class="regresa" href="resumen.html">Back to the resume!</a>
+		</section>
+			<div class="contiene-separa-footer">
+				<div class="separa-footer2"></div>
+			</div>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-links">
+							<div class="iconos">
+								<ul>
+									<li><a href="media/cv.pdf"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
+									<li><a href="https://mail.google.com/mail/u/0/"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker"><span class="fab fa-github" title="Github."></span></a></li>
+								</ul>
+							</div>
+						</div>	
+						<div class="footer-links">
+							<ul>
+								<li><p>CV:</p></li>
+								<li><p>Position:</p></li>
+								<li><p>Email:</p></li>
+								<li><p>Linkedin:</p></li>
+								<li><p>Github:</p></li>
+							</ul>
+						</div>		
+						<div class="footer-links">
+							<ul>
+								<li><a href="media/cv.pdf">Ulises_Delgado</a></li>
+								<li><p>Front_End_Web_Developer</p></li>
+								<li><p>gdur777@gmail.com</p></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker">Github</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		<script>
+			var coll = document.getElementsByClassName("colapsable");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var parrafo = this.nextElementSibling;
+				if (parrafo.style.maxHeight){
+				  parrafo.style.maxHeight = null;
+				  parrafo.style.borderBottom = null;
+				} 
+				else {
+				  parrafo.style.maxHeight = parrafo.scrollHeight + "px";
+				  parrafo.style.borderBottom = "1px dotted rgb(255, 255, 0)";  
+				}
+			  });
+			}
+		</script>
+	</body>
+</html>

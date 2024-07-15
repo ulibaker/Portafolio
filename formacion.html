@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		
+		<script src="jquery-1.6.3.min.js"></script>
+		<script>
+			$(function() {
+				$("body").hide().fadeIn(750);
+			});
+		</script>
+		
+		<title>Formation | Jr Developer</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="listanavegar"><a href="sobremi.html">About me</a></li>
+					<li class="listanavegar"><a href="formacion.html">Formation</a></li>
+					<li class="listanavegar"><a href="habilidades.html">My Skills</a></li>
+					<li class="listanavegar"><a href="experiencia.html">Experience</a></li>
+					<li class="listanavegar"><a href="proyectos.html">My Proyects</a></li>
+				</ul>
+			</nav>	
+			<div class="cyantitle">
+				<h2>FORMATION</h2>
+				<p> Information about my life as a student.
+				</p>
+			</div>
+		</header>
+		
+		<section>
+			<button type="button" class="colapsable"><h3> First steps in programming. </h3></button>
+			<div class="parrafo">
+				<p> At the highschool I started in competitive programming, fisrt in a open source educational software called "Karel the Robot", and after that, using C++.
+				I competed in several contests of mathematics and programming. Sadly I never won in a national instance, but I learned all the logic and 
+				developed the ability to design and implement algorithms to solve problems. </p>
+				
+				<figure>
+					<img src="media/karel.jpg" alt="karel" title="Karel the Robot." />
+				</figure>
+			</div>
+			<button type="button" class="colapsable"><h3> Degree. </h3></button>
+			<div class="parrafo">
+				<p> Later I entered the Instituto Tecnológico de Chihuahua II (ITCHII), where I became a distiguished student. The educational program is based on Java, but I learned a lot of other thing such as
+				Office, SQL, Networks and the OSI model, cyber-security and pentesting, fundamentals of artificial intelligence (in Python), and many other subjects.
+				After that I am a Computer Systems Engineer. </p>
+				
+				<figure>
+					<img src="media/universidad.jpg" alt="itch2" title="Instituto Tecnológico de Chihuahua II." />
+				</figure>
+			</div>
+			<button type="button" class="colapsable"><h3> Self-Learning. </h3></button>
+			<div class="parrafo">
+				<p> Of course, throughout these years I have always been trying to learn new skills and improve the ones I already have. </p>
+			</div>
+			<a class="regresa" href="resumen.html">Back to the resume!</a>
+		
+		</section>
+		
+			<div class="contiene-separa-footer">
+				<div class="separa-footer2"></div>
+			</div>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-links">
+							<div class="iconos">
+								<ul>
+									<li><a href="media/cv.pdf"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
+									<li><a href="https://mail.google.com/mail/u/0/"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker"><span class="fab fa-github" title="Github."></span></a></li>
+								</ul>
+							</div>
+						</div>	
+						<div class="footer-links">
+							<ul>
+								<li><p>CV:</p></li>
+								<li><p>Position:</p></li>
+								<li><p>Email:</p></li>
+								<li><p>Linkedin:</p></li>
+								<li><p>Github:</p></li>
+							</ul>
+						</div>		
+						<div class="footer-links">
+							<ul>
+								<li><a href="media/cv.pdf">Ulises_Delgado</a></li>
+								<li><p>Front_End_Web_Developer</p></li>
+								<li><p>gdur777@gmail.com</p></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker">Github</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		<script>
+			var coll = document.getElementsByClassName("colapsable");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var parrafo = this.nextElementSibling;
+				if (parrafo.style.maxHeight){
+				  parrafo.style.maxHeight = null;
+				  parrafo.style.borderBottom = null;
+				} 
+				else {
+				  parrafo.style.maxHeight = parrafo.scrollHeight + "px";
+				  parrafo.style.borderBottom = "1px dotted rgb(255, 255, 0)";  
+				}
+			  });
+			}
+		</script>
+	</body>
+</html>

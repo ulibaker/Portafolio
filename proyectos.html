@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		
+		<script src="jquery-1.6.3.min.js"></script>
+		<script>
+			$(function() {
+				$("body").hide().fadeIn(750);
+			});
+		</script>
+		
+		<title>My Proyects | Jr Developer</title>
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="listanavegar"><a href="sobremi.html">About me</a></li>
+					<li class="listanavegar"><a href="formacion.html">Formation</a></li>
+					<li class="listanavegar"><a href="habilidades.html">My Skills</a></li>
+					<li class="listanavegar"><a href="experiencia.html">Experience</a></li>
+					<li class="listanavegar"><a href="proyectos.html">My Proyects</a></li>
+				</ul>
+			</nav>	
+			<div class="cyantitle">
+				<h2>MY PROYECTS</h2>
+				<p> I have developed many school projects, but these are the most complex or interesting.
+				</p>
+			</div>
+		</header>
+		
+		<section>
+			<button type="button" class="colapsable"><h3> Virtual assistant. </h3></button>
+			<div class="parrafo">
+				<p> A software made with artificial intelligence techniques, with the purpose of giving information to visitors of the university.<br>
+				First of all, it detects if a human face is in front of the cam, and then it asks if it can help, by providing n options. 
+				Depending on which one the person in front of the cam says (orally),
+				the assistant will give indications about locations and people inside the university.
+				</p>
+				<p> This project was developed by a team of 3 people, (including me).
+				</p>
+			</div>
+			<button type="button" class="colapsable"><h3> Hikvision's Hackathon. </h3></button>
+			<div class="parrafo">
+				<p> Hikvision is a chinese enterprise, manufacturer of security and video surveillance equipment.
+				</p>
+				<p> This project involved 6 people, (including me). They gave us these face recognition terminals, that are capable of providing or denying access 
+				(both, virtual and physical), based on the faces previously registered on the device. And the objective was to develop an application to have a 
+				remote record of all the attempts of the users.
+				</p>
+				<p> Although we didn't win, I learned some things about how to manipulate JSON information.
+				</p>
+			</div>
+			<button type="button" class="colapsable"><h3> Escape room. </h3></button>
+			<div class="parrafo">
+				<p> 
+				A game that is about escaping from locked room by solving puzzles, it has a countdown timer of 2 minutes to put pressure on the player.
+				The game is very simple but the development was really fun.
+				</p>
+				<p> 
+				This project was developed 2 people, (including me).
+				</p>
+			</div>
+			<a class="regresa" href="resumen.html">Back to the resume!</a>
+			
+		</section>	
+		
+			<div class="contiene-separa-footer">
+				<div class="separa-footer2"></div>
+			</div>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-links">
+							<div class="iconos">
+								<ul>
+									<li><a href="media/cv.pdf"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
+									<li><a href="https://mail.google.com/mail/u/0/"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker"><span class="fab fa-github" title="Github."></span></a></li>
+								</ul>
+							</div>
+						</div>	
+						<div class="footer-links">
+							<ul>
+								<li><p>CV:</p></li>
+								<li><p>Position:</p></li>
+								<li><p>Email:</p></li>
+								<li><p>Linkedin:</p></li>
+								<li><p>Github:</p></li>
+							</ul>
+						</div>		
+						<div class="footer-links">
+							<ul>
+								<li><a href="media/cv.pdf">Ulises_Delgado</a></li>
+								<li><p>Front_End_Web_Developer</p></li>
+								<li><p>gdur777@gmail.com</p></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker">Github</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		<script>
+			var coll = document.getElementsByClassName("colapsable");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var parrafo = this.nextElementSibling;
+				if (parrafo.style.maxHeight){
+				  parrafo.style.maxHeight = null;
+				  parrafo.style.borderBottom = null;
+				} 
+				else {
+				  parrafo.style.maxHeight = parrafo.scrollHeight + "px";
+				  parrafo.style.borderBottom = "1px dotted rgb(255, 255, 0)";  
+				}
+			  });
+			}
+		</script>
+	</body>
+</html>
