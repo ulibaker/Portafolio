@@ -12,7 +12,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, nav, ol, ul, li, pre, code, address, vari
 	margin: 0;
 	font-size: 100%;
 	font-weight: normal;
-	font: 15px 'con';
+	font: 20px 'con';
 	list-style: none;
 }
 nav {
@@ -40,6 +40,13 @@ header, section, footer {
 	border-right: 1px solid rgb(255, 255, 255);
 	border-left: 1px solid rgb(255, 255, 255);
 	/* border: 1px solid rgb(255, 255, 255); */
+}
+
+.datos{
+	color: rgb(0, 255, 0);
+}
+.datoslite{
+	color: rgb(150, 255, 150);
 }
 
 .wrapper2{
@@ -99,7 +106,7 @@ footer{
 p{
 	margin-bottom: 1%;
 	color:#fff;
-	font-size:18px;
+	font-size:20px;
 }
 
 h1{
@@ -234,15 +241,23 @@ img{
 	padding: 0 15px;
 }
 .footer-links ul li{
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-bottom: 10px;
 }
 .footer-links ul li p, a{
+	padding-right: 7px;
+	padding-left: 0px;
+	/*border: 1px solid rgb(255, 255, 0); VER LOS LINKS EN CAJA AMARILLA  */ 
 	color: #fff;
 	transition: all .2s ease;
 }
 .footer-links ul li p, a:hover{
-	padding-left: 15px;
+	padding-right: 0px;
+	padding-left: 7px;
+}
+.footer-links ul li p{
+	padding-right: 7px;
+	padding-left: 0px;
 }
 
 .colapsable {
