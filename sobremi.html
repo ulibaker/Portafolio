@@ -35,13 +35,13 @@
 		<section>
 			<button type="button" class="colapsable"><h3> Basic information. </h3></button>
 			<div class="parrafo">		
-				<ul>	
+				<ul class="listas-cont">	
 					<li> Name: <span class="datos">Ulises Delgado</span>.</li>
 					<li> Civil status: <span class="datos">single</span>.</li>
 					<li> Number of children: <span class="datos">None</span>.</li>
 					<li> Date of birth (DD MM YYYY): <span class="datos">24 07 2000</span>.</li>
 					<li> Place of birth (Country, State, City): <span class="datos">Mexico, Chihuahua, Chihuahua</span>.</li>
-					<li> Blood <span class="datos">type: O+</span>.</li>
+					<li> Blood type: <span class="datos">O+</span>.</li>
 					<li> Height: <span class="datos">171cm</span>.</li>
 					<li> Weight: <span class="datos">65Kg</span>.</li>
 					<li> COVID-19 Vaccinated: <span class="datos">YES, Sinovac (2) and AstraZeneca</span>.</li>
@@ -63,13 +63,13 @@
 				<p> Of course it would be nice to get a job in any country of the European Union, but I am focused in my first option: <span class="datoslite">Tallinn</span>.
 				I was planning to move to <span class="datoslite">Estonia</span> since I discovered this beautiful country like 8 years ago.</p>
 				<p> Reasons why I decided to move to Estonia:</p>
-				<ul>	
-					<li> 1.- Higher salaries.</li>
-					<li> 2.- Safety.</li>
-					<li> 3.- Low taxes.</li>
-					<li> 4.- high demand for developers.</li>
-					<li> 5.- The forest, and its landscapes.</li>
-					<li> 6.- I hate hot weather.</li>
+				<ul class="listas-cont">	
+					<li> Higher salaries.</li>
+					<li> Safety.</li>
+					<li> Low taxes.</li>
+					<li> high demand for developers.</li>
+					<li> The forest, and its landscapes.</li>
+					<li> I hate hot weather.</li>
 				</ul>
 			</div>
 			<button type="button" class="colapsable"><h3> Vocation as a programmer. </h3></button>
@@ -93,11 +93,16 @@
 						<div class="footer-links">
 							<div class="iconos">
 								<ul>
-									<li><a href="media/cv.pdf"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
-									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
-									<li><a href="https://mail.google.com/mail/u/0/"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
-									<li><a href="https://www.linkedin.com/in/ulises-delgado/"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
-									<li><a href="https://github.com/ulibaker"><span class="fab fa-github" title="Github."></span></a></li>
+									<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus" target="_blank" rel="noopener noreferrer"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
+									<li><a class="correo-purpura" onclick="copiarCorreo()"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
+									<script>
+										function copiarCorreo() {
+										  navigator.clipboard.writeText("elmismisimoulibaker@gmail.com");
+										}
+									</script>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer"><span class="fab fa-github" title="Github."></span></a></li>
 								</ul>
 							</div>
 						</div>	
@@ -112,11 +117,11 @@
 						</div>		
 						<div class="footer-links">
 							<ul>
-								<li><a href="media/cv.pdf">Ulises_Delgado</a></li>
-								<li><p>Front_End_Web_Developer</p></li>
-								<li><p>gdur777@gmail.com</p></li>
-								<li><a href="https://www.linkedin.com/in/ulises-delgado/">Linkedin</a></li>
-								<li><a href="https://github.com/ulibaker">Github</a></li>
+								<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer">Ulises Delgado</a></li>
+								<li><p>Front End Web Developer</p></li>
+								<li><a class="correo-purpura" onclick="copiarCorreo()">elmismisimoulibaker@gmail.com</a></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer">Github</a></li>
 							</ul>
 						</div>	
 					</div>

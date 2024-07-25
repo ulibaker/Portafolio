@@ -111,7 +111,8 @@ p{
 
 h1{
 	border-bottom: 2px dashed rgb(255, 255, 255);
-	padding-top: 3%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 	color:#fff;
 	font-size:35px;
 	text-align:center;
@@ -181,8 +182,22 @@ ul li{
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
+.listas-cont{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.listas-cont li{
+	color:#fff;
+	font-size:18px;
+	list-style-type: square;
+	margin-left: 25px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
 
 .listanavegar{
+	list-style-type: none;
+	padding-left: 10px;
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
 	margin-left: 4%;
@@ -286,4 +301,11 @@ img{
 	background-color: #012;
 }
 
+.correo-purpura {
+	color: #cc00cc;
+}
+
+/* .boton-correo {
+	
+} */
 
