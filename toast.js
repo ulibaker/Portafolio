@@ -58,11 +58,10 @@ const agregarToast = () => {
 		
 		nuevoToast.addEventListener('animationend', handleAnimacionCierre);
 		
+		setTimeout(() => cerrarToast(1), 4900);
+		setTimeout(() => cerrarToast(1), 4920);
+		setTimeout(() => cerrarToast(1), 4940);
+		setTimeout(() => cerrarToast(1), 4960);
+		setTimeout(() => cerrarToast(1), 4980);
 		setTimeout(() => cerrarToast(1), 5000);
-		setTimeout(() => cerrarToast(1), 5500);
-		setTimeout(() => cerrarToast(1), 5520);
-		setTimeout(() => cerrarToast(1), 5540);
-		setTimeout(() => cerrarToast(1), 5560);
-		setTimeout(() => cerrarToast(1), 5580);
-		setTimeout(() => cerrarToast(1), 5600);
 };

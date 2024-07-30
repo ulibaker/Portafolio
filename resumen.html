@@ -12,13 +12,16 @@
 		
 		<script src="jquery-1.6.3.min.js"></script> <!-- FADE IN -->
 		<script src="toast.js" defer></script> <!-- TOAST -->
+		
 		<script>
 			$(function() {
 				$("body").hide().fadeIn(500);
 			});
 		</script>
 		
-		<title> Portafolio | Jr Developer </title>
+		<title> | Portafolio | </title>
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+		
 	</head>
 	<body>
 		<div class="wrapper2">
@@ -39,7 +42,7 @@
 			</section>
 			<div class="separa-footer1"></div>
 			
-			<footer class="footer">
+			<footer class="footer" id="toast-footer">
 				<div class="container">
 					<div class="footer-row">
 						<div class="footer-links">
@@ -47,7 +50,7 @@
 								<ul>
 									<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
 									<li><a href="https://et.wikipedia.org/wiki/Front-end_veebiarendus" target="_blank" rel="noopener noreferrer"><span class="fa-solid fa-code" title="Desired Position."></span></a></li>
-									<li><a class="correo-purpura" onclick="copiarCorreo()"><span class="fa-solid fa-envelope" title="Email."></span></a></li>
+									<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies"><span class="fa-solid fa-envelope" title="Email." data-tipo="sies"></span></a></li>
 									<script>
 										function copiarCorreo() {
 										  navigator.clipboard.writeText("elmismisimoulibaker@gmail.com");
@@ -71,7 +74,7 @@
 							<ul>
 								<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer">Ulises Delgado</a></li>
 								<li><p>Front End Web Developer</p></li>
-								<li><a class="correo-purpura" onclick="copiarCorreo()">elmismisimoulibaker@gmail.com</a></li>
+								<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies">elmismisimoulibaker@gmail.com</a></li>
 								<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
 								<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer">Github</a></li>
 							</ul>
@@ -79,6 +82,19 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div class="contenedor-toast" id="contenedor-toast">
+	   <!-- <div class="toast">
+				<div class="contenido-toast">
+					<div class="icono-toast">
+						<span class="fa-solid fa-circle-exclamation"></span>
+					</div>
+					<div class="texto-toast">
+						<p> Email copied ! </p>
+					</div>
+					<button class="btn-cerrar"><p>x</p><!-- <span class="fa-solid fa-circle-xmark"></span></button>
+				</div>
+			</div> -->
 		</div>
 	</body>
 </html>
