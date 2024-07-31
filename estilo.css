@@ -197,10 +197,14 @@ ul li{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	border: 1px solid rgb(255, 255, 255);
+	/* border: 1px solid rgb(255, 255, 255); */ /* VER LOS ELEMENTOS DEL NAV BAR */ 
 	display: inline-block;
 	min-width: 18.5%;
 	max-width: 18.5%;
+}
+
+.listanavegar2 {
+	margin-left: 15px;
 }
 
 nav {
