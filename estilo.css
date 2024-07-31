@@ -15,10 +15,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, nav, ol, ul, li, pre, code, address, vari
 	font: 20px 'con';
 	list-style: none;
 }
-nav {
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
+
 html{
 	height: 100%;
 	background-color:#000;
@@ -196,19 +193,24 @@ ul li{
 }
 
 .listanavegar{
+	text-align: center;
 	list-style-type: none;
-	padding-left: 10px;
-	margin-top: 0.5%;
-	margin-bottom: 0.5%;
-	margin-left: 4%;
-	margin-right: 4%;
-	display: inline;
+	padding: 0;
+	margin: 0;
+	border: 1px solid rgb(255, 255, 255);
+	display: inline-block;
+	min-width: 18.5%;
+	max-width: 18.5%;
 }
 
-nav{
+nav {
+	display: grid;
+	justify-items: stretch;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	height: 35px;
 	padding-top:15px;
-	background-color: #000;
+	background: rgba(0, 0, 0, 1.0);
 	border-radius: 13px;
 	border: 1px solid rgb(255, 255, 255);
 }
