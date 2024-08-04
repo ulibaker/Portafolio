@@ -2,12 +2,11 @@ const contenedorLinks = document.getElementById('toast-footer');
 const contenedorToast = document.getElementById('contenedor-toast');
 
 contenedorLinks.addEventListener('click', (e) => {
-	e.preventDefault();
-	
 	/* console.log(e.target.dataset.tipo); */
 	const esElCorreo = e.target.dataset.tipo;
 	
 	if(esElCorreo === 'sies'){
+	    e.preventDefault();
 		/* console.log('agregando toast') */
 		agregarToast();	
 	}
