@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- ICONOS -->
+		
+		<script src="jquery-1.6.3.min.js"></script> <!-- FADE IN -->
+		<script src="toast.js" defer></script> <!-- TOAST -->
+		<script>
+			$(function() {
+				$("body").hide().fadeIn(300);
+			});
+		</script>
+		
+		<title> | My Skills | </title>
+		<link rel="icon" href="media/favicon.ico" type="image/x-icon">
+		
+	</head>
+	
+	<body>
+		<div class="idioma"><a href="habilidades-es.html">🇪🇸</a></div>
+		<header>
+			<nav>
+				<ul>
+					<li class="listanavegar listanavegar2"><a href="sobremi-en.html">About me</a></li>
+					<li class="listanavegar"><a href="experiencia-en.html">Experience</a></li>
+					<li class="listanavegar"><a href="proyectos-en.html">Projects</a></li>
+					<li class="listanavegar"><a href="habilidades-en.html">Skills</a></li>
+					<li class="listanavegar"><a href="formacion-en.html">Formation</a></li>
+				</ul>
+			</nav>	
+			<div class="cyantitle">
+				<h2>SKILLS</h2>
+				<p> I am fully <span class="datoslite">available to adapt</span> to other technologies.
+				</p>
+			</div>
+		</header>
+		
+		<section>
+			<button type="button" class="colapsable"><h3> Languages ​​and Technologies. </h3></button>
+			<div class="parrafo">
+				<ul class="listas-cont">	
+					<li> Java </li>
+					<li> C++ </li>
+					<li> HTML, CSS, JS </li>	
+					<li> React </li>
+					<li> SQL </li>
+					<li> Jest </li>
+					<li> Git </li>
+				</ul>
+			</div>
+			<button type="button" class="colapsable"><h3> Currently learning. </h3></button>
+			<div class="parrafo">
+				<ul class="listas-cont">
+					<li> Python </li>
+					<li> Node.Js </li>
+					<li> TypeScript </li>
+				</ul>
+			</div>
+			<button type="button" class="colapsable"><h3> Soft Skills. </h3></button>
+			<div class="parrafo">
+				<ul class="listas-cont">
+					<li> Teamwork </li>
+					<li> Communicative </li>
+					<li> Fast learning </li>
+					<li> Attention-to-detail </li>
+					<li> Software Engineering (Roger S. Pressman and Ian Sommerville) </li>
+					<li> Determined </li>
+					<li> And more... </li>
+				</ul>
+			</div>
+			<a class="regresa" href="default-en.htm">Back to the resume!</a>
+			
+		</section>
+		
+			<div class="contiene-separa-footer">
+				<div class="separa-footer2"></div>
+			</div>
+			<footer class="footer" id="toast-footer">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-links">
+							<div class="iconos">
+								<ul>
+									<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><span class="fa-solid fa-code" title="Desired Position."></span></li>
+									<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies"><span class="fa-solid fa-envelope" title="Email." data-tipo="sies"></span></a></li>
+									<script>
+										function copiarCorreo() {
+										  navigator.clipboard.writeText("elmismisimoulibaker@gmail.com");
+										}
+									</script>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer"><span class="fab fa-github" title="Github."></span></a></li>
+								</ul>
+							</div>
+						</div>	
+						<div class="footer-links">
+							<ul>
+								<li><p>CV:</p></li>
+								<li><p>Position:</p></li>
+								<li><p>Email:</p></li>
+								<li><p>Linkedin:</p></li>
+								<li><p>Github:</p></li>
+							</ul>
+						</div>		
+						<div class="footer-links">
+							<ul>
+								<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer">Ulises Delgado</a></li>
+								<li><p>Full-Stack Developer</p></li>
+								<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies">elmismisimoulibaker@gmail.com</a></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer">Github</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		<script>
+			var coll = document.getElementsByClassName("colapsable");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var parrafo = this.nextElementSibling;
+				if (parrafo.style.maxHeight){
+				  parrafo.style.maxHeight = null;
+				  parrafo.style.borderBottom = null;
+				} 
+				else {
+				  parrafo.style.maxHeight = parrafo.scrollHeight + "px";
+				  parrafo.style.borderBottom = "1px dotted rgb(255, 255, 0)";  
+				}
+			  });
+			}
+		</script>
+		
+		<div class="contenedor-toast" id="contenedor-toast">
+	   <!-- <div class="toast">
+				<div class="contenido-toast">
+					<div class="icono-toast">
+						<span class="fa-solid fa-circle-exclamation"></span>
+					</div>
+					<div class="texto-toast">
+						<p> Email copied ! </p>
+					</div>
+					<button class="btn-cerrar"><p>x</p><!-- <span class="fa-solid fa-circle-xmark"></span></button>
+				</div>
+			</div> -->
+		</div>
+	</body>
+</html>

@@ -421,6 +421,19 @@ video{
 	animation-fill-mode: forwards;
 }
 
+.idioma {
+	width: 40px;
+	height: 30px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	background: #012;
+	margin-top: 2.7%;
+	margin-left: 91%;
+	padding-left: 12px;
+	padding-right: 0px;
+	position: absolute;
+}
+
 @keyframes cierre{
 	from {
 		transform: translateX();

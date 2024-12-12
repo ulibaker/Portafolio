@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- ICONOS -->
+		
+		<script src="jquery-1.6.3.min.js"></script> <!-- FADE IN -->
+		<script src="toast.js" defer></script> <!-- TOAST -->
+		<script>
+			$(function() {
+				$("body").hide().fadeIn(300);
+			});
+		</script>
+		
+		<title> | Proyectos | </title>
+		<link rel="icon" href="media/favicon.ico" type="image/x-icon">
+		
+	</head>
+	
+	<body>
+		<div class="idioma"><a href="proyectos-en.html">🏴󠁧󠁢󠁥󠁮󠁧󠁿</a></div>
+		<header>
+			<nav>
+				<ul>
+					<li class="listanavegar listanavegar2"><a href="sobremi-es.html">Sobre mí</a></li>
+					<li class="listanavegar"><a href="experiencia-es.html">Experiencia</a></li>
+					<li class="listanavegar"><a href="proyectos-es.html">Proyectos</a></li>
+					<li class="listanavegar"><a href="habilidades-es.html">Habilidades</a></li>
+					<li class="listanavegar"><a href="formacion-es.html">Educación</a></li>
+				</ul>
+			</nav>	
+			<div class="cyantitle">
+				<h2>PROYECTOS</h2>
+				<p>Dime, ¿Qué te parecen? 
+				<span class="datoslite">Tu retroalimentación es importante</span>.
+				</p>
+			</div>
+		</header>
+		
+		<section>
+			<button type="button" class="colapsable"><h3>Películas API.</h3></button>
+			<div class="parrafo">
+				<p> 
+				Utilicé <span class="datoslite">OMDb API</span> para obtener información de películas, y luego hice una interfaz de usuario simple.
+				</p>
+				<p> 
+				Aquí el resultado:
+				</p>
+				<video src="media/react-films.mp4" controls title="OMDb API react-films." alt="Vídeo del uso de una API con React."></video>
+				<p> 
+				Este proyecto lo hice con <span style="color: cyan;">React</span>, para así mejorar mis habilidades con esta biblioteca.
+				</p>
+			</div>
+			<button type="button" class="colapsable"><h3>Carrito de compras.</h3></button>
+			<div class="parrafo">
+				<p> 
+				Primero, hice un archivo JSON con productos que encontré en linea, luego descargué las imágenes y con estos recursos,
+				desarrollé este prototipo de carrito funcional, tan típico de los e-commerce.
+				</p>
+				<video src="media/react-shopping-cart.mp4" controls title="Carrito de compras." alt="Vídeo del carrito hecho con React."></video>
+				<p> 
+				También hecho con <span style="color: cyan;">React</span>.
+				</p>
+			</div>
+			<button type="button" class="colapsable"><h3> Asistente virtual. </h3></button>
+			<div class="parrafo">
+				<p> 
+				Un software hecho con bibliotecas de <span class="datoslite">artificial intelligence</span> de código abierto, 
+				con el propósito de proporcionarle información a los visitantes de la universidad.
+				</p>
+				<p>
+				Primero, se detecta si un humano está frente a la cámara (<span class="datoslite">reconocimimento facial</span>), 
+				luego le pregunta si le puede ayudar (<span class="datoslite">texto a voz</span>),
+				proporcionando opciones como:
+				</p>
+				<ul>	
+					<li> 1.- ¿Dónde está el baño más cercano? </li>
+					<li> 2.- ¿Dónde está el edificio administrativo? </li>
+					<li> 3.- ¿Cómo inscribirse para el siguiente semestre? </li>
+					<li> 4.- Cancelar. </li>
+				</ul>
+				<p> 
+				Dependiendo del número que la persona elija (<span class="datoslite">reconocimiento de voz</span>), 
+				el asistente dará la información correspondiente.
+				</p>
+				<p>
+				Este proyecto fue desarrollado por un equipo de 3 personas.
+				</p>
+				<video src="media/asistente.mp4" controls title="Asistente virtual." alt="Vídeo del reconocimiento facial."></video>
+			</div>
+			<button type="button" class="colapsable"><h3> Hackathon de Hikvision. </h3></button>
+			<div class="parrafo">
+				<p> 
+				Hikvision es una empresa china, que fabrica dispositivos seguridad y vídeo vigilancia.
+				</p>
+				<p> 
+				Cinco amigos y yo decidimos apuntarnos a este concurso de 48 horas. 
+				Entonces, ellos nos dieron sus terminales de reconocimiento facial, que son capaces de dar o negar acceso (virtual o físico), 
+				basándose en las caras previamente registradas en el dispositivo. 
+				</p> 
+				<figure>
+					<img src="media/terminal.png" alt="terminal" title="Terminal de Hikvision." />
+				</figure>
+				<p> 
+				El objetivo fue desarrollar una aplicación capaz de almacenar de manera remota, el historial de intentos.
+				</p>
+				<p> 
+				Hubo más de 20 equipos concursando y aunque no ganamos, fue una experiencia inolvidable.
+				</p>
+			</div>
+			<button type="button" class="colapsable"><h3> Acertijos. </h3></button>
+			<div class="parrafo">
+				<p> 
+				Utilizando Unity, C# y Blender, mi amigo y yo hicimos este juego que consiste en resolver acertijos. Aquí algunos ejemplos:
+				</p>
+				<p> 
+				3 en raya - coloca 3 equis en horizontal, vertical, o diagonal.
+				</p>
+				<figure>
+					<img src="media/prueba-ttt.jpg" alt="Tres en raya." title="Tres en raya." />
+				</figure>
+				<p> 
+				Laberinto - conecta el punto inicial y el punto final rotando las pieza.
+				</p>
+				<video src="media/prueba-lab.mp4" controls title="Laberinto." alt="Laberinto de tuberías."></video>
+				<p> 
+				Ábaco - encuentra las pistas y decifra la contraseña para abrir la puerta y escapar.
+				</p>
+				<figure>
+					<img src="media/prueba-abacus.jpg" alt="Ábaco." title="Ábaco." />
+				</figure>
+			</div>
+			<p>Hay muchos otros proyectos en mi perfil de <a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer">
+			GitHub</a> ¡Date una vuelta! Estoy agregando nuevos proyectos constantemente.</p>
+			<a class="regresa" href="default-es.html">¡Regresar al resumen!</a>
+			
+		</section>
+		
+			<div class="contiene-separa-footer">
+				<div class="separa-footer2"></div>
+			</div>
+			<footer class="footer" id="toast-footer">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-links">
+							<div class="iconos">
+								<ul>
+									<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer"><span class="fa-regular fa-file-pdf" title="Curriculum Vitae."></span></a></li>
+									<li><span class="fa-solid fa-code" title="Desired Position."></span></li>
+									<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies"><span class="fa-solid fa-envelope" title="Email." data-tipo="sies"></span></a></li>
+									<script>
+										function copiarCorreo() {
+										  navigator.clipboard.writeText("elmismisimoulibaker@gmail.com");
+										}
+									</script>
+									<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin" title="Likedin."></span></a></li>
+									<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer"><span class="fab fa-github" title="Github."></span></a></li>
+								</ul>
+							</div>
+						</div>	
+						<div class="footer-links">
+							<ul>
+								<li><p>CV:</p></li>
+								<li><p>Puesto:</p></li>
+								<li><p>Email:</p></li>
+								<li><p>Linkedin:</p></li>
+								<li><p>Github:</p></li>
+							</ul>
+						</div>		
+						<div class="footer-links">
+							<ul>
+								<li><a href="media/cv.pdf" target="_blank" rel="noopener noreferrer">Ulises Delgado</a></li>
+								<li><p>Full-Stack Developer</p></li>
+								<li><a class="correo-purpura" onclick="copiarCorreo()" data-tipo="sies">elmismisimoulibaker@gmail.com</a></li>
+								<li><a href="https://www.linkedin.com/in/ulises-delgado/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+								<li><a href="https://github.com/ulibaker" target="_blank" rel="noopener noreferrer">Github</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		<script>
+			var coll = document.getElementsByClassName("colapsable");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var parrafo = this.nextElementSibling;
+				if (parrafo.style.maxHeight){
+				  parrafo.style.maxHeight = null;
+				  parrafo.style.borderBottom = null;
+				} 
+				else {
+				  parrafo.style.maxHeight = parrafo.scrollHeight + "px";
+				  parrafo.style.borderBottom = "1px dotted rgb(255, 255, 0)";  
+				}
+			  });
+			}
+		</script>
+		
+		<div class="contenedor-toast" id="contenedor-toast">
+	   <!-- <div class="toast">
+				<div class="contenido-toast">
+					<div class="icono-toast">
+						<span class="fa-solid fa-circle-exclamation"></span>
+					</div>
+					<div class="texto-toast">
+						<p> Email copied ! </p>
+					</div>
+					<button class="btn-cerrar"><p>x</p><!-- <span class="fa-solid fa-circle-xmark"></span></button>
+				</div>
+			</div> -->
+		</div>
+	</body>
+</html>
